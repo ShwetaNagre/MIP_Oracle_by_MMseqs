@@ -19,19 +19,15 @@ query_ids = []
 with open(whole_region_file, 'r') as f:
     for line in f:
         if line.startswith('>'):
-            query_id = line.strip()
+            query_id = line.strip()[1:]  # Remove '>' for matching purposes
             query_ids.append(query_id)
 
 # Identify the IDs that did not get any hits
-no_hits_ids = []
-for query_id in query_ids:
-    if query_id not in hits_ids_set:
-        no_hits_ids.append(query_id)
+no_hits_ids = [query_id for query_id in query_ids if query_id not in hits_ids_set]
 
 # Write the IDs with no hits to a file
 with open(no_hits_file, 'w') as f:
     for no_hit_id in no_hits_ids:
-        f.write(no_hit_id + '\n')
+        f.write('>' + no_hit_id + '\n')  # Add '>' back when writing to file
 
 print(f"Total sequences with no hits: {len(no_hits_ids)}")
-
