@@ -5,7 +5,7 @@
 
 # Define file paths
 whole_region_file = 'whole_region.txt'
-no_hits_file = 'no_hits_ids.txt'
+no_hits_file = 'final_no_hits_ids.txt'
 final_output_file = 'Final_MIPS.txt'
 
 # Read no hits IDs into a set for fast lookup
@@ -42,4 +42,3 @@ with open(final_output_file, 'w') as f:
 
 print(f"Total sequences with no hits: {len(no_hits_sequences)}")
 print(f"Final output written to {final_output_file}")
-
