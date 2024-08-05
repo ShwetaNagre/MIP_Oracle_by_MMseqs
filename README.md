@@ -59,12 +59,12 @@ Nucleotide BLAST 2.12.0 + with the nt database.
 
 Python 3.6 and the following python packages:
 
-pandas=1.1.5
-biopython=1.70
-configparser
-regex
-xlsxwriter
-openpyxl
+1. pandas=1.1.5
+2. biopython=1.70
+3. configparser
+4. regex
+5. xlsxwriter
+6. openpyxl
 
 Users can install the required packages through conda using the following command
 
