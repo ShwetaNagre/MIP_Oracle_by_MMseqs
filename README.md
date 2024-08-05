@@ -7,9 +7,11 @@ Requirements
 Design
 
 
+# Molecular Inversion Probe(MIP)
+
 Molecular Inversion Probes(MIPs), are single-stranded DNA molecules containing two complementary regions which flank the target DNA. These molecules often have a Fluorophore, DNA barcode, or Molecular tag for unique identification.
 
-# Molecular Inversion Probe(MIP)
+Add a fig here
 
 # Rough Design Outline -
 
