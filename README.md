@@ -39,16 +39,18 @@ MIP_ORACLE.sh -i Trial_File -o trial_final_results -l mip_oracle -j /DATA/databa
 nohup can also be used:
 
 ```bash
-nohup MIP_ORACLE.sh -i Lactobacillus_fermentum_16S -o lacto16S_final_results -l mip_oracle -j /DATA/databases/blast/nt > lacto16S_log.out &
+nohup MIP_ORACLE.sh -i Trial_File -o trial_final_results -l mip_oracle -j /DATA/databases/blast/nt > trial_log.out &
 ```
 
-The following files will be generated(The first eight files will be in a folder called LOG_FILES):
+The following files will be generated:
 1) The first file will contain all possible MIPs for the sequences provided.
-2) The second and third file will contain Passable MIPs(The MIPs which met user requirements as per the config file), and Eliminated MIPs(MIPs which were filtered out).
-3) The fourth file is the BLAST input containing arm1+target+arm2 sequences.
-4) The fifth and sixth files are the .xml result files from BLAST.
-5) The seventh file will contain the parsed BLAST results about each MIP, and the eighth file will have the filtered results.
-Lastly the final result file will be generated in an excel format. image
+2) The second and third files will contain Passable MIPs(The MIPs that met user requirements as per the config file), and Eliminated MIPs(MIPs that were filtered out).
+3) The fourth file is the input file for MMseqs2 search containing arm1+target+arm2 sequences.
+4) The fifth and sixth files are the MMseqs2 databases for only human sequences and other non-redundant nucleotides sequence format created from nt BLAST DB input .
+5) The seventh file will contain the MIPs with no hits in the MMseqs2 DB, and the eighth file will have the filtered results.
+Lastly, the final result file will be generated with filtered MIPs.
+
+Add files image
 
 
 # Requirements -
