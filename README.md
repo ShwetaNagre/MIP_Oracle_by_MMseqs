@@ -2,9 +2,9 @@
 A software to filter and identify unique target regions with diagnostic significance in antimicrobial resistance genes, and various other pathogen genomes.
 
 # Table of contents
-Demo-Preview
-Requirements
-Design
+1. Demo-Preview
+2. Requirements
+3. Design
 
 
 # Molecular Inversion Probe(MIP)
