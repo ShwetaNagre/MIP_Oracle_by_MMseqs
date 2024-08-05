@@ -9,7 +9,7 @@ A software to filter and identify unique target regions with diagnostic signific
 
 # Molecular Inversion Probe(MIP)
 
-Molecular Inversion Probes(MIPs), are single-stranded DNA molecules containing two complementary regions which flank the target DNA. These molecules often have a Fluorophore, DNA barcode, or Molecular tag for unique identification.
+Molecular Inversion Probes(MIPs) are single-stranded DNA molecules containing two complementary regions which flank the target DNA. These molecules often have a Fluorophore, DNA barcode, or Molecular tag for unique identification.
 
 Add a fig here
 
@@ -17,7 +17,7 @@ Add a fig here
 
 1) Start with all possible MIPs by moving along the strand one base pair at a time.
 2) Design MIPs for both the forward and reverse strands so that we have the highest probability of binding and then proceed to filter them according to three user-specified criteria: Temperature GC Content Nucleotide Repeats
-3) Create a database in mmseqs format to only include the human (host) genome. Then filter the MIPs by searching them against the host genome(human).
+3) Create a database in MMseqs2 format to only include the human (host) genome. Then filter the MIPs by searching them against the host genome(human).
 4) To increase the probability of the MIP binding to the correct target region, search them against the non-redundant nucleotides database.
 5) Filter out any MIPs which do not match any other organisms.
 
