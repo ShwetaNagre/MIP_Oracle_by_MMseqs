@@ -11,7 +11,8 @@ A software to filter and identify unique target regions with diagnostic signific
 
 Molecular Inversion Probes(MIPs) are single-stranded DNA molecules containing two complementary regions that flank the target DNA. These molecules often have a Fluorophore, DNA barcode, or Molecular tag for unique identification.
 
-Add a fig here
+![MIP_example](https://github.com/SakshiPandey97/MIP_ORACLE/assets/59496870/9d92d545-ffe3-42c6-9125-0c3271ccd35f)
+
 
 # Rough Design Outline -
 
