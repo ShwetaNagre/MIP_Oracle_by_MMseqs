@@ -112,7 +112,7 @@ echo "__________________________________________"
 echo
 # Creating a database for whole_region.txt
 mmseqs createdb whole_region.txt whole_region_DB
-
+# Creating a database with taxonomic ids for whole_region.txt
 mmseqs createtaxdb whole_region_DB tmp --ncbi-tax-dump taxonomy/ --tax-mapping-file /nfs_master/shweta/New_MIPS/shweta_mips/tax_mmseq/nt.fna.taxidmapping
 echo
 now=$(date +"%T")
